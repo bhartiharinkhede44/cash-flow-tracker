@@ -15,7 +15,7 @@ app.get('/health',getApiHealth )
 
 app.post('/api/transcation',postApiTranscation);
 
-app.get('/api/transitions', getApiTranscation);
+app.get('/api/transcation', getApiTranscation);
 
 
 

@@ -33,13 +33,14 @@ async(req,res)=>{
     
 }
 const getApiTranscation = async (req, res) => {
-    const transcationFind = await transcation.find()
+    const findTransaction = await Transaction.find();
+
     try {
         return responder({
             res,
             success:true,
             message:"Successfully fetched all transactions",
-            data:transcationFind
+            data:findTransaction 
         });
     }
     catch(e) {
